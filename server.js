@@ -25,7 +25,10 @@ server.set("views", path.join(path.resolve(), "src", "views"));
 server.use(expressEjsLayouts);
 // Default route
 server.get("/", (req, res) => {
-  res.send("Welcome");
+  res.render("homepage");
+});
+server.get("/createNew", (req, res) => {
+  res.render("createNew");
 });
 
 server.listen(port, (err) => {
