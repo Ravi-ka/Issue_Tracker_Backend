@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <h4>Create Issues / Bugs</h4>
+  <form action="" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        class="form-control"
+        rows="4"
+        required
+      ></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="labels" class="form-label">Labels:</label>
+      <select id="labels" name="labels" class="form-select">
+        <option value="">Select a label</option>
+        <option value="Feature">Feature</option>
+        <option value="Bug">Bug</option>
+        <option value="Enhancement">Enhancement</option>
+        <!-- Add more predefined options as needed -->
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="author" class="form-label">Author:</label>
+      <input
+        type="text"
+        id="author"
+        name="author"
+        class="form-control"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Create Issue/Bug</button>
+  </form>
+</div>

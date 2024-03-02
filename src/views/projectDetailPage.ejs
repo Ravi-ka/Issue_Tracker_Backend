@@ -1,0 +1,25 @@
+<main>
+  <h4>Project Details:</h4>
+  <%if(content){ %>
+  <div id="project-list" class="border-black bg-info p-4 rounded m-4">
+    <p id="project-name"><b>Project Title: </b><%=content.projectName%></p>
+    <p id="project-description" class="text-break">
+      <b>Project Description: </b><%=content.projectDescription%>
+    </p>
+    <p id="project-author"><b>Author: </b><%=content.projectAuthor%></p>
+    <a href="/project/<%=content._id%>/createIssue"
+      ><button class="btn btn-dark">Create Issue</button></a
+    >
+  </div>
+  <%}%>
+
+  <h4>Issues/Bugs:</h4>
+  <%Issues.forEach(e=>{%>
+  <div class="border-black bg-info p-4 rounded m-4">
+    <p><b>Title:</b> <%=e.title%></p>
+    <p><b>Description: </b><%=e.description%></p>
+    <p><b>Labels: </b><%=e.labels%></p>
+    <p><b>Author: </b><%=e.author%></p>
+  </div>
+  <%})%>
+</main>
