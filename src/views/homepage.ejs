@@ -1,4 +1,4 @@
-<p class="sub-titile">Project List:</p>
+<p class="sub-titile text-decoration-underline">Project List:</p>
 <div id="project-main-container">
   <%content.forEach(e=>{ %>
   <div id="project-list" class="border-black bg-info p-4 rounded m-4">
@@ -13,9 +13,9 @@
   </div>
   <%})%>
 
-  <button type="button" class="btn btn-outline-success m-4">
-    <a aria aria-current="page" href="/createNew" class="text-decoration-none"
-      >Create New Project</a
-    >
-  </button>
+  <a aria aria-current="page" href="/createNew" class="text-decoration-none"
+    ><button type="button" class="btn btn-outline-success m-4">
+      Create New Project
+    </button></a
+  >
 </div>
